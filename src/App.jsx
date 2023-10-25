@@ -6,6 +6,7 @@ import {
 } from 'react-router-dom';
 import Home  from './Home.jsx';
 import Login from './Login';
+import Instructive from './components/Instructive';
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <Routes>
           <Route exact path='/' element={<Home/>} />
           <Route exact path="/Login" element={<Login/>} />
+          <Route exact path="/Instructive" element={<Instructive/>} />
       </Routes>   
     </Router>
   );
