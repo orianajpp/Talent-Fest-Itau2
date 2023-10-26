@@ -1,12 +1,12 @@
 import React from 'react';
-import FormBot from './components/form';
 import { BubbleChat } from "flowise-embed-react";
+import FormBotRequest from './components/formRequest';
 
-function Form() {
+function FormRequest() {
     return (
         <><div>
             <h2>Formulario de Solicitud de Robot</h2>
-            <FormBot />
+            <FormBotRequest />
         </div>
         <section>
             <BubbleChat
@@ -52,4 +52,4 @@ function Form() {
     );
 }
 
-export default Form;
+export default FormRequest;
