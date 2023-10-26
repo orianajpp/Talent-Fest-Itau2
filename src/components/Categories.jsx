@@ -2,11 +2,9 @@ import { Navigate } from "react-router-dom";
 
 
 function Categories({ title }) {
-/*     const [selectedOption, setSelectedOption] = useState('requerimientos'); */
+    
 
-    /* const handleOptionChange = (option) => {
-        setSelectedOption(option);
-    } */
+   
     return (
       <div>
         <h1>{title}</h1>

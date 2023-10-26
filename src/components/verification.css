@@ -1,0 +1,10 @@
+.verification{
+   
+    width: 100%;
+   
+    border: 10px solid red;
+}
+.form-verification{
+    display: flex;
+    flex-direction: column;
+}
