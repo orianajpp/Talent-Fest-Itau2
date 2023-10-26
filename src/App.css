@@ -5,3 +5,11 @@
   height: auto;
 }
 
+@font-face {
+  font-family: "Itau Display";
+  src: url('fonts/itau-display.ttf') format('truetype');
+}
+
+* {
+  font-family: "Itau Display", sans-serif;
+}
