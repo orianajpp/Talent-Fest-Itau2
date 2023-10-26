@@ -3,7 +3,9 @@ function Footer(){
     return(
         <>
             <footer className="footer">
-                <label className="footer-lab"> © Robotics 2023</label>
+                <div className="label-footer">
+                    <label > © Robotics 2023</label>
+                </div>
             </footer>
         </>
 
