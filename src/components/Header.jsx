@@ -1,21 +1,28 @@
 import Logo from '../assets/Logo.png';
-import './header.css'
+import './header.css';
 
-function Header() {
-    return(
-        <>
-        <header className='header'>
-            <div className='introduction-div'>
-                <div>
-                    <img src={Logo} alt="Logo" />
-                </div>
-                <label className='interface-name'>Inicio de Sesión</label>
+function Header(props) {
+  const isHomeView = props.isHomeView; // Obtén el valor de isHomeView de las props
+
+  return (
+    <>
+      <header className='header'>
+        <div className='div-header'>
+          <div className='introduction-div'>
+            <img src={Logo} alt="Logo" />
+            <div className='div-interface-name'><label className='interface-name'>{props.etiquete}</label></div>
+            
+          </div>
+          
+
+             <div className='closed-div'>
+                {isHomeView ? <button>Cerrar sesión</button> : ""}
             </div>
-            <div className='closed-div'></div>
-        </header>
-        </>
-    )
-   
-
+        </div>
+        
+      </header>
+    </>
+  );
 }
+
 export default Header;

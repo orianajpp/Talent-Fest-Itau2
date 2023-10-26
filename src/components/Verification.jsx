@@ -25,21 +25,19 @@ function Verification() {
       alert('codigo correcto');
       navigate('/Home');
    
-
-
      
     }
   
     return (
       <>
       <div className="verification"> 
-        <label className="tittle" htmlFor="">Verificación de seguridad</label>
+        <label className="title" >Verificación de seguridad</label>
         <form className="form-verification" onSubmit={handleVerificationSubmit}>
-          <label htmlFor="">Código de verificación por mail</label>
+          <label>Código de verificación por mail</label>
           <input type="text" name="" id="" onChange={handleChange} />
           <button type="submit">Enviar</button>
         </form>
-        </div>
+      </div>
        
       </>
     );

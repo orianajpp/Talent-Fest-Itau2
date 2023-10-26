@@ -33,7 +33,7 @@ const Login = () => {
     try {
       const response = await signIn(contactInfo.email, contactInfo.password);
       if (response) {
-        setModalMessage('hola',<Verification/>);
+        setModalMessage(<Verification/>);
         setIsModalVisible(true);
         setIsLoginVisible(false);
       }
@@ -41,34 +41,38 @@ const Login = () => {
       console.log("No pude iniciar sesión:", error);
     }
   };
+  
+  
 
   return (
     <>
-      <Header />
+      <Header etiquete="Inicio de sesión"/>
       {isLoginVisible && (
         <div className="content-div">
           <div className="form form-div">
             <h1>Bienvenido al asistente virtual.</h1>
-            <label className="tittle">Iniciar sesión</label>
+            <label className="title">Iniciar sesión</label>
             <form className="form" onSubmit={handleSubmit}>
-              <label className="tittle label-input">Correo</label>
+              <label className="label-input">Correo</label>
               <input
                 className="inputs-login"
                 type="email"
                 name="email"
-                placeholder="👤︎  Email"
+                placeholder="    ✉ Ejemplo@itau.cl"
                 value={contactInfo.email}
                 onChange={handleChange}
               />
-              <label className="tittle label-input">Contraseña</label>
+              <p></p>
+              <label className="label-input">Contraseña</label>
               <input
                 className="inputs-login"
                 type="password"
                 name="password"
-                placeholder="🔒︎  Password"
+                placeholder="    🔒︎ Ingresa contraseña"
                 value={contactInfo.password}
                 onChange={handleChange}
               />
+              <p></p>
               <button className="btn" type="submit">Ingresar</button>
             </form>
 
