@@ -6,16 +6,17 @@ import {
 } from 'react-router-dom';
 import Home  from './Home.jsx';
 import Login from './Login';
-import Instructive from './components/Instructive';
-
+import ResumeView from './Resume.jsx';
+import Form from './FormView.jsx';
 
 function App() {
   return (
     <Router>
       <Routes>
-          <Route exact path='/' element={<Home/>} />
-          <Route exact path="/Login" element={<Login/>} />
-          <Route exact path="/Instructive" element={<Instructive/>} />
+          <Route exact path='/' element={<Login/>} />
+          <Route exact path="/Home" element={<Home/>} />
+          <Route exact path="/Resume" element={<ResumeView/>} />
+          <Route exact path="/Form" element={<Form/>} />
       </Routes>   
     </Router>
   );
