@@ -5,7 +5,6 @@ function ResumeView(props) {
     const location = useLocation();
 // Accede a los datos del formulario desde las props
 const { userPetitioner, management, functionalName, idBot, file } = location.state;
-
     return (
     <div>
         <h2>Resumen de Datos</h2>
