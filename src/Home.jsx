@@ -1,21 +1,17 @@
-import { BubbleChat } from "flowise-embed-react";
-import FormBot from "./components/form"
+import Instructive from './components/Instructive';
+import Categories from './components/Categories';
+
 
 const Home = () => (
   <>
     <section className='Home'>
-      <h1>HOLA</h1>
-      <FormBot />
+    <Categories title="RPA/Robot"/>
+    <Categories title="Software/WorkFlow/BBDD"/>
+    <Categories title="Soporte TI Robotic"/>
     </section>
-    <section>
-      <BubbleChat
-        chatflowid="233012fc-31f3-4452-b3a0-7e83ec692e6e"
-        apiHost="https://itau-2-tf.onrender.com"
-        bubbleColor="#0078d4" // Cambiar el color de los bocadillos de chat
-        avatarSize={50} />
-    </section>
-  </>
-);
-
-export default Home;
-
+    <Instructive/>
+    </>
+  );
+  
+  export default Home;
+  
