@@ -1,7 +1,12 @@
 .footer{
     width: 100%;
     height: 48px;
-    background-color: #908C8C;
+    background-color: #EC7000;
     bottom:0px;
     position:fixed;
+    
+}
+.label-footer{
+   color: white; 
+    padding: 15px;
 }
