@@ -21,7 +21,7 @@ function Modal({ message, showModal, closeModal }) {
           <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
           <path d="M10 10l4 4m0 -4l-4 4" />
         </svg>
-        
+
       </button>
       <label className="message-modal">{message}</label>
     </div>

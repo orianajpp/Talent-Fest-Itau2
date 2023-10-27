@@ -1,0 +1,153 @@
+.containerAlert {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    backdrop-filter: blur(0.3125rem);
+}
+
+.modalOverlay {
+    background-color: rgba(0, 0, 0, 0.245);
+    border-radius: 0.5rem;
+    width: 80%;
+    height: 30%;
+    max-width: 31.25rem;
+    text-align: center;
+}
+
+.headerAlert {
+    display: flex;
+    align-items: center;
+    margin-top: 1.5625rem;
+}
+
+.headerAlert img {
+    margin: 0 0.625rem 0.9375rem 1.875rem;
+}
+
+hr {
+    border: 0.0625rem solid black;
+    width: 90%;
+}
+
+.hrContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.pTituloAlert {
+    font-size: large;
+    margin-top: 0.9375rem;
+    margin-bottom: 0.9375rem;
+}
+
+.checkIcon {
+    height: 1.875rem;
+    margin-bottom: 0.9375rem;
+}
+
+.closeAlert {
+    margin-left: 13.125rem;
+    margin-bottom: 2.5rem;
+}
+
+.contentAlert {
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+}
+
+@media (max-width: 360px) {
+    .containerAlert {
+        backdrop-filter: blur(0.2rem);
+    }
+
+    .modalOverlay {
+        width: 90%;
+        height: 50%;
+        max-width: none;
+        border-radius: 0.3rem;
+    }
+
+    .headerAlert {
+        margin-top: 1rem;
+    }
+
+    .headerAlert img {
+        margin: 0 0.4rem 0.6rem 1.2rem;
+    }
+
+    .hr {
+        border-width: 0.05rem;
+    }
+
+    .pTituloAlert {
+        margin-top: 0.6rem;
+        margin-bottom: 0.6rem;
+    }
+
+    .checkIcon {
+        height: 1.5rem;
+        margin-bottom: 0.6rem;
+    }
+
+    .closeAlert {
+        margin-left: 8rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .contentAlert {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 800px) {
+    .containerAlert {
+        backdrop-filter: blur(0.25rem);
+    }
+
+    .modalOverlay {
+        width: 70%;
+        height: 40%;
+        border-radius: 0.4rem;
+    }
+
+    .headerAlert {
+        margin-top: 1.25rem;
+    }
+
+    .headerAlert img {
+        margin: 0 0.5rem 0.75rem 1.5rem;
+    }
+
+    .hr {
+        border-width: 0.05rem;
+    }
+
+    .pTituloAlert {
+        margin-top: 0.75rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .checkIcon {
+        height: 1.5rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .closeAlert {
+        margin-left: 10.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .contentAlert {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+}
