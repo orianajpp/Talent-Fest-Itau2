@@ -4,7 +4,7 @@ import "./modal.css";
 function Modal({ message, showModal, closeModal }) {
   return (
     <div className="modal" style={{ display: showModal ? "block" : "none" }}>
-      <button className="close-button" onClick={closeModal}>
+      <div className="div-btn-close-modal"><button className="close-button" onClick={closeModal}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="icon icon-tabler icon-tabler-circle-x"
@@ -22,8 +22,9 @@ function Modal({ message, showModal, closeModal }) {
           <path d="M10 10l4 4m0 -4l-4 4" />
         </svg>
         
-      </button>
-      <label className="message-modal">{message}</label>
+      </button></div>
+      <div className="div-message-modal"><label className="message-modal">{message}</label></div>
+      
     </div>
   );
 }

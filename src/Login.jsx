@@ -16,7 +16,7 @@ const Login = () => {
 
   const [isModalVisible, setIsModalVisible] = useState(false);
   const [modalMessage, setModalMessage] = useState("");
-  const [isLoginVisible, setIsLoginVisible] = useState(true); // Nuevo estado para controlar la visibilidad del inicio de sesión
+  const [isLoginVisible, setIsLoginVisible] = useState(true); 
 
   const handleChange = (event) => {
     setContactInfo({ ...contactInfo, [event.target.name]: event.target.value });

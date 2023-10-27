@@ -21,7 +21,7 @@ body{
  
 
 }
-
+/* ----------------------------------LOGIN---------------------------------*/
 .content-div{
  
   display: flex;
@@ -114,6 +114,7 @@ hr{
   background-color: #908C8C;
   
 }
+
 @media (max-width: 768px) {
   .content-div {
     flex-direction: column-reverse;
@@ -136,3 +137,4 @@ hr{
     height: 400px;
   }
 } 
+/*-------------------------------HOME---------------------------------*/

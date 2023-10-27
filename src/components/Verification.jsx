@@ -31,12 +31,17 @@ function Verification() {
     return (
       <>
       <div className="verification"> 
-        <label className="title" >Verificación de seguridad</label>
-        <form className="form-verification" onSubmit={handleVerificationSubmit}>
-          <label>Código de verificación por mail</label>
-          <input type="text" name="" id="" onChange={handleChange} />
-          <button type="submit">Enviar</button>
-        </form>
+        <div><label className="title" >Verificación de seguridad</label></div>
+        
+        <div className="form-verification">
+          
+                <form  onSubmit={handleVerificationSubmit}>
+                
+                  <div><label>Código de verificación por mail</label></div>
+                  <div><input type="text" name="" id="" onChange={handleChange} /></div>  
+                  <div><button type="submit">Enviar</button></div>
+                </form> 
+        </div>
       </div>
        
       </>
