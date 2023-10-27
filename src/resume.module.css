@@ -9,7 +9,9 @@
 .imageResume {
     height: 12.5rem;
     width: 31.25rem;
-    margin-bottom: 0.9375rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
 }
 
 .listResume {
@@ -31,7 +33,7 @@
 
 #pFile,
 .listResume {
-    margin-bottom: 0.9375rem;
+    margin-bottom: 1rem;
 }
 
 .finalLi,

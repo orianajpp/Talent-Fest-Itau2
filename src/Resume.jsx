@@ -6,6 +6,7 @@ import AlertResume from './components/AlertResume';
 import styles from './resume.module.css'
 
 function ResumeView(props) {
+    console.log('Received data:', useLocation().state);
     const [count, setCount] = useState(() => {
         const savedCount = localStorage.getItem('count');
         return savedCount !== null ? JSON.parse(savedCount) : 0;
@@ -32,7 +33,7 @@ function ResumeView(props) {
     }, []);
     const location = useLocation();
     // Accede a los datos del formulario desde las props
-    const { userPetitioner, management, functionalName, idBot, file, selectedTicket } = location.state;
+    const { userPetitioner, management, functionalName, idBot, file, selectedTicket, description } = location.state;
 
     return (
         <>
@@ -44,7 +45,8 @@ function ResumeView(props) {
                     <li className={styles.li}><strong className={styles.listStrong}>Ticket:</strong> {selectedTicket}</li>
                     <li className={styles.li}><strong className={styles.listStrong}>Gerencia:</strong> {management}</li>
                     <li className={styles.li}><strong className={styles.listStrong}>ID del Robot:</strong> {idBot}</li>
-                    <li className={styles.finalLi}><strong className={styles.listStrong}>Nombre Funcional del Robot:</strong> {functionalName}</li>
+                    <li className={styles.li}><strong className={styles.listStrong}>Nombre Funcional del Robot:</strong> {functionalName} </li>
+                    <li className={styles.finalLi}><strong className={styles.listStrong}>Descripción:</strong>{description}</li>
                 </ul>
                 {file && (
                     <div>
