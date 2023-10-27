@@ -4,7 +4,7 @@ import { useLocation } from 'react-router-dom';
 function ResumeView(props) {
     const location = useLocation();
 // Accede a los datos del formulario desde las props
-const { userPetitioner, management, functionalName, idBot, file, selectedTicket } = location.state;
+const { userPetitioner, management, functionalName, idBot, file, selectedTicket,description } = location.state;
     return (
     <div>
         <h2>Resumen de Datos</h2>
