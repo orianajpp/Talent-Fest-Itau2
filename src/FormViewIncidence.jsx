@@ -1,12 +1,11 @@
-
-import FormBot from './components/form';
 import { BubbleChat } from "flowise-embed-react";
+import FormBotIncidence from './components/formIncidence';
 
-function Form() {
+function FormIncidence() {
     return (
         <><div>
             <h2>Formulario de Solicitud de Robot</h2>
-            <FormBot />
+            <FormBotIncidence />
         </div>
         <section>
             <BubbleChat
@@ -52,4 +51,4 @@ function Form() {
     );
 }
 
-export default Form;
+export default FormIncidence;
