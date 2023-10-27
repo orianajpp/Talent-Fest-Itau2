@@ -1,23 +1,27 @@
-
 .instructiveContainer {
-    max-width: 40%; 
-    margin: 0 auto;
-    background-color: #f2f2f2;
-    padding: 2%; 
-    border: 1px solid #ccc;
-    border-radius: 10px;
-   
-  }
-  
-  .instructive h1{
-    text-align: center;
-  }
-  .instructive ul {
-    text-align: left;
-  }
-  
-  .instructive li {
-    text-align: left;
-  }
-  
-  
+  max-width: 40%;
+  margin: 15px auto;
+  background-color: #f2f2f2;
+  padding: 2%;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column; 
+  gap: 15px; 
+}
+
+.instructive {
+  font-size: 0.8rem; 
+  text-align: left;
+}
+.title{
+  font-size: 1rem; 
+  text-align: center;
+}
+
+.instructive ul {
+  list-style-type: disc; 
+  padding-left: 20px; 
+}
+
+
