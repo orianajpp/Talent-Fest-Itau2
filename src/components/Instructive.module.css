@@ -10,7 +10,7 @@
   gap: 15px; 
 }
 
-.instructive {
+.instructive, h2, p {
   font-size: 0.8rem; 
   text-align: left;
 }
@@ -23,5 +23,6 @@
   list-style-type: disc; 
   padding-left: 20px; 
 }
+
 
 
