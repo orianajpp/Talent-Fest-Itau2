@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import formCSS from './form.module.css';
 
 function FormBotIncidence() {
 const [userPetitioner, setUserPetitioner] = useState('');
@@ -8,6 +9,7 @@ const [userPetitioner, setUserPetitioner] = useState('');
     const [idBot, setIdBot] = useState('');
     const [selectedTicket, setSelectedTicket] = useState(''); 
     const [file, setFile] = useState(null);
+    const [description, setDescription] = useState('');
     
     const navigate = useNavigate(); 
 
@@ -19,6 +21,8 @@ const [userPetitioner, setUserPetitioner] = useState('');
             functionalName,
             idBot,
             selectedTicket, 
+            file,
+            description
         };
 
         navigate('/Resume', { state: dataForm });
@@ -30,10 +34,10 @@ const [userPetitioner, setUserPetitioner] = useState('');
     };
 
     return (
-        <form onSubmit={handleAnswers}>
+        <form className={formCSS.formContainer} onSubmit={handleAnswers}>
             <div>
-            <label>Selecciona el ticket:</label>
-                <select value={selectedTicket} onChange={(e) => setSelectedTicket(e.target.value)}>
+            <label className={formCSS.label}>Selecciona el ticket:</label>
+                <select className = {formCSS.select} value={selectedTicket} onChange={(e) => setSelectedTicket(e.target.value)}>
                             <option value="incidencias0"></option>
                             <option value="Aumento en Tiempo de Procesamiento Robot">Aumento en Tiempo de Procesamiento Robot</option>
                             <option value="Problema Correo Robot">Problema Correo Robot</option>
@@ -50,8 +54,8 @@ const [userPetitioner, setUserPetitioner] = useState('');
                 </select>
             </div>
             <div>
-                <label>Usuario Solicitante:</label>
-                    <select value={userPetitioner} onChange={(e) => setUserPetitioner(e.target.value)}>
+                <label className={formCSS.label}>Usuario Solicitante:</label>
+                    <select className = {formCSS.select} value={userPetitioner} onChange={(e) => setUserPetitioner(e.target.value)}>
                         <option value="None"></option>
                         <option value="Usuario 1">Usuario 1</option>
                         <option value="Usuario 2">Usuario 2</option>
@@ -59,8 +63,8 @@ const [userPetitioner, setUserPetitioner] = useState('');
                     </select>
             </div>
             <div>
-                <label>Gerencia:</label>
-                    <select value={management} onChange={(e) => setManagement(e.target.value)}>
+                <label className={formCSS.label}>Gerencia:</label>
+                    <select className = {formCSS.select} value={management} onChange={(e) => setManagement(e.target.value)}>
                         <option value="None"></option>
                         <option value="Ciberseguridad y Fraude">Ciberseguridad y Fraude</option>
                         <option value="Compliance">Compliance</option>
@@ -74,8 +78,8 @@ const [userPetitioner, setUserPetitioner] = useState('');
                     </select>
             </div>
             <div>
-                <label>Nombre Funcional del Robot:</label>
-                    <select value={functionalName} onChange={(e) => setFunctionalName(e.target.value)}>
+                <label className={formCSS.label}>Nombre Funcional del Robot:</label>
+                    <select className = {formCSS.select} value={functionalName} onChange={(e) => setFunctionalName(e.target.value)}>
                     <option value="Bot0"></option>
                         <option value="Confeccion Informe Normativo 1">Confeccion Informe Normativo 1</option>
                         <option value="Bloqueo Masivo Tarjetas de Crédito">Bloqueo Masivo Tarjetas de Crédito</option>
@@ -110,8 +114,8 @@ const [userPetitioner, setUserPetitioner] = useState('');
                     </select>
             </div>
             <div>
-                <label>ID del Robot:</label>
-                    <select value={idBot} onChange={(e) => setIdBot(e.target.value)}>
+                <label className={formCSS.label}>ID del Robot:</label>
+                    <select className = {formCSS.select} value={idBot} onChange={(e) => setIdBot(e.target.value)}>
                         <option value="None"></option>
                         <option value="CIBFRA_CIBER_001">CIBFRA_CIBER_001</option>
                         <option value="CIBFRA_CIBER_002">CIBFRA_CIBER_002</option>
@@ -146,10 +150,14 @@ const [userPetitioner, setUserPetitioner] = useState('');
                     </select>
             </div>
             <div>
-                <label>Subir archivo (imagen o video):</label>
-                    <input type="file" accept="image/*, video/*" onChange={handleFileChange}/>
+                <label className={formCSS.label}>Descripción:</label>
+                    <textarea className={formCSS.textArea} value={description} onChange={(e) => setDescription(e.target.value)}></textarea>
+            </div> 
+            <div>
+                <label className={formCSS.label}>Subir archivo (imagen o video):</label>
+                    <input type="file" accept="image/*, video/*" onChange={handleFileChange} className={formCSS.fileInput}/>
             </div>
-            <button type="submit">Enviar</button>
+            <button className={formCSS.submittButton} type="submit">Enviar</button>
         </form>
     );
 }
