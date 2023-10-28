@@ -5,16 +5,6 @@ import ResumeView from '../Resume';
 
 function FormHandler() {
     return (
-
-        //     <Routes>
-        //         <Route path="FormRequest" element={<FormRequest />}>
-        //             <Route path="Resume" element={<ResumeView />} />
-        //         </Route>
-        //         <Route path="FormIncidence" element={<FormIncidence />}>
-        //             <Route path="Resume" element={<ResumeView />} />
-        //         </Route>
-        //     </Routes>
-        // );
         <div>
             <Routes>
                 <Route path="FormRequest" element={<FormRequest />}>
