@@ -27,7 +27,7 @@ function FormBotRequest() {
             description
         };
         console.log('Navigating to /Resume with data:', dataForm);
-        navigate('/Resume', { state: dataForm });
+        navigate('/Home/FormRequest/Resume', { state: dataForm });
     };
 
     //Agregué esto para el contador del número de ticket que se muestra en el resumen
