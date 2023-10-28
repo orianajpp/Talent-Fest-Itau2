@@ -25,7 +25,7 @@ function FormBotIncidence() {
             description
         };
 
-        navigate('/Resume', { state: dataForm });
+        navigate('/Home/FormIncidence/Resume', { state: dataForm });
     };
 
     const handleFileChange = (e) => {
