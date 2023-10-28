@@ -1,3 +1,5 @@
+import logoImage from '../assets/Logo.png';
+import checkImage from '../assets/check.png';
 import styles from "./alertResume.module.css";
 
 export default function AlertResume({ closeModal, count }) {
@@ -6,7 +8,7 @@ export default function AlertResume({ closeModal, count }) {
 
             <div className={styles.modalOverlay}>
                 <header className={styles.headerAlert}>
-                    <img src="src/assets/Logo.png" />
+                    <img src={logoImage} alt="Logo" />
                     <p><strong>Ingreso del ticket</strong></p>
                     <button className={`close-button ${styles.closeAlert}`} onClick={closeModal}>
                         <svg
@@ -29,8 +31,8 @@ export default function AlertResume({ closeModal, count }) {
                 </header>
                 <div className={styles.hrContainer}><hr />
                     <p className={styles.pTituloAlert}><strong>¡Tu solicitud ha sido guardada con éxito!</strong></p>
-                    <img className={styles.checkIcon} src="src/assets/check.png" />
-                    <p className={styles.contentAlert}>A tu solicitud se le ha asignado el código de seguimiento {count}. Se enviará un correo como comprobante de tu solicitud.</p>
+                    <img className={styles.checkIcon} src={checkImage} alt="Check Icon" />
+                    <h2 className={styles.contentAlert}>A tu solicitud se le ha asignado el código de seguimiento {count}. Se enviará un correo como comprobante.</h2>
                 </div>
 
             </div >
