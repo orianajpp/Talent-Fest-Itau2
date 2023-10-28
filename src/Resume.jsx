@@ -39,7 +39,7 @@ function ResumeView(props) {
         <>
             <Header />
             <div className={styles.containerResume}>
-                <h2 className={styles.prueba}>Resumen de Datos</h2>
+                <h1 className={styles.h2Text}>Resumen de Datos</h1>
                 <ul className={styles.listResume}>
                     <li className={styles.li}><strong className={styles.listStrong}>Usuario Solicitante:</strong> {userPetitioner}</li>
                     <li className={styles.li}><strong className={styles.listStrong}>Ticket:</strong> {selectedTicket}</li>
@@ -56,7 +56,7 @@ function ResumeView(props) {
                     </div>
 
                 )}
-                <p><strong>Su número de solicitud es: {count}</strong></p>
+                <h3 className={styles.requestNumber}><strong>Su número de solicitud es: {count}</strong></h3>
                 <div>
                     <button onClick={openModal} className={styles.buttonOpenAlert}>Guardar</button>
                     {isModalOpen && (
