@@ -4,6 +4,12 @@ import styles from './Breadcrumbs.module.css';
 const Breadcrumbs = () => {
     const location = useLocation();
     const pathnames = location.pathname.split('/').filter((x) => x);
+    const routeNames = {
+        Home: 'Home',
+        FormRequest: 'Requerimientos',
+        FormIncidence: 'Incidencias',
+        Resume: 'Resumen de Datos'
+    };
 
     return (
         <div className={styles.container}>
@@ -14,7 +20,9 @@ const Breadcrumbs = () => {
                 return (
                     <span key={to} className={styles.separator}>
                         {' > '}
-                        <Link className={isActive ? `${styles.link} ${styles.active}` : styles.link} to={to}>{value}</Link>
+                        <Link className={isActive ? `${styles.link} ${styles.active}` : styles.link} to={to}>
+                            {routeNames[value] || value}
+                        </Link>
                     </span>
                 );
             })}
