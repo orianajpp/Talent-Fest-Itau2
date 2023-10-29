@@ -117,6 +117,7 @@ const Login = () => {
       {isModalVisible && (
         <Modal message={modalMessage} showModal={isModalVisible} closeModal={() => setIsModalVisible(false)} />
       )}
+     
 
       <Footer />
     </>

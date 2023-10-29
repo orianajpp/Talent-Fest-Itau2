@@ -106,6 +106,7 @@ input::placeholder {
   background-color:  #EC7000;
   color: white;
   font-size: larger;
+  text-decoration: none;
 }
 .btn_problem{
   background-color:  transparent;
