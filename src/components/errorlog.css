@@ -1,0 +1,9 @@
+.div-error-log{
+    width: 250px;
+    height: 250px;
+    align-items: start;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}

@@ -11,7 +11,7 @@
 .div-header{
     display: flex;
     flex-direction: row;
-    align-items: start;
+    justify-content: space-between;
     width: 100%;
 }
 .introduction-div{
@@ -32,4 +32,8 @@
     margin: 0 0 20px 20px;
     color: #FFFFFF;
     
+}
+.closed-div{
+   margin: 30px;
+
 }

@@ -4,6 +4,9 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import CategoriesCSS from "./Categories.module.css";
 
+
+
+
 const Home = () => (
   <>
     <Header etiquete="" isHomeView={true} />

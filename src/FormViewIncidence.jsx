@@ -8,7 +8,7 @@ import Instructive from "./components/Instructive";
 function FormIncidence() {
     return (
         <>        
-        <Header/>
+        <Header isHomeView={true}/>
         <div className={FormCSS.backView}>
             <div className={FormCSS.leftColumn}>
                 <h3 className={FormCSS.tittle}>Completa el siguiente formulario para mandar tu solicitud</h3>

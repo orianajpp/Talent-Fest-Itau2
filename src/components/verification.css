@@ -1,8 +1,18 @@
+
 .verification{
     width: 100%;
-    border: 10px solid red;
+    height: 250px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around ;
+   align-items: center;
+   
 }
 .form-verification{
+    width: 100%;
+    height: 250px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
