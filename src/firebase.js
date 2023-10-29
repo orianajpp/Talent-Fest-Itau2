@@ -3,7 +3,7 @@ import {
     signOut,
     sendEmailVerification,
 } from 'firebase/auth';
-import { auth } from './firebaseConfig';
+import { auth} from './firebaseConfig';
 
 
 

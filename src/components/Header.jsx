@@ -3,22 +3,19 @@ import Logo from "../assets/Logo.png";
 import { logOut } from "../firebase";
 import "./header.css";
 
-const userLogin = localStorage.getItem('user');
+
+ 
 
 function Header(props) {
+  
   const navigate = useNavigate();
   const isHomeView = props.isHomeView; 
   const handleLogout = async(event) => {
     event.preventDefault();
     try {
-      if (userLogin) {
-        // console.log(logOut)
-        await logOut(navigate);
-        localStorage.clear();
+        await logOut(navigate); 
         navigate('/');
-      } else {
-        console.log('hola');
-      }
+     
     } catch (err) {
       console.error(err.message);
     }
