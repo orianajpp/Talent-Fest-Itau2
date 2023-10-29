@@ -1,0 +1,142 @@
+.containerResume {
+    margin-top: 6.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.imageResume {
+    height: 12.5rem;
+    width: 31.25rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+}
+
+.listResume {
+    border: 0.0625rem solid #E1E1E1;
+    text-align: left;
+    width: 31.25rem;
+    list-style: none;
+    margin-top: 0.625rem;
+    border-radius: 0.9375rem;
+}
+
+.listStrong {
+    margin-right: 0.1875rem;
+}
+
+.li {
+    border-bottom: 0.0625rem solid #E1E1E1;
+}
+
+#pFile,
+.listResume {
+    margin-bottom: 1rem;
+}
+
+.finalLi,
+.li {
+    padding: 0.5rem;
+}
+
+.buttonOpenAlert {
+    width: 31.25rem;
+    background-color: #EC7000;
+    color: white;
+    padding: 0.625rem;
+    border: 0.0625rem solid #EC7000;
+    border-radius: 0.625rem;
+    margin-top: 0.9375rem;
+}
+
+@media (max-width: 360px) {
+    .containerResume {
+        margin-top: 7.5rem;
+    }
+
+    .imageResume {
+        height: 10rem;
+        width: 20rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .listResume,
+    .buttonOpenAlert {
+        width: 18rem;
+    }
+
+    .listResume {
+        border-radius: 0.6rem;
+    }
+
+    .listStrong {
+        margin-right: 0.1rem;
+    }
+
+    .li {
+        border-width: 0.05rem;
+    }
+
+    #pFile,
+    .listResume {
+        margin-bottom: 0.6rem;
+    }
+
+    .finalLi,
+    .li {
+        padding: 0.4rem;
+    }
+
+    .buttonOpenAlert {
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+        margin-top: 0.6rem;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 800px) {
+    .containerResume {
+        margin-top: 7.5rem;
+    }
+
+    .imageResume {
+        height: 10rem;
+        width: 25rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .listResume,
+    .buttonOpenAlert {
+        width: 25rem;
+    }
+
+    .listResume {
+        border-radius: 0.75rem;
+    }
+
+    .listStrong {
+        margin-right: 0.15rem;
+    }
+
+    .li {
+        border-width: 0.05rem;
+    }
+
+    #pFile,
+    .listResume {
+        margin-bottom: 0.75rem;
+    }
+
+    .finalLi,
+    .li {
+        padding: 0.4rem;
+    }
+
+    .buttonOpenAlert {
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+        margin-top: 0.75rem;
+    }
+}

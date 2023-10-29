@@ -1,0 +1,93 @@
+.container {
+  display: flex;
+  justify-content: center;
+  padding-top: 5%;
+  gap: 20px;
+}
+
+.categoriesContainer {
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid gray;
+  width: 230px;
+  height: 150px;
+  max-width: 300px;
+  border-radius: 10px;
+}
+.btnContainer {
+    display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+padding: 1vh;
+  }
+  
+
+.title {
+  font-family: Arial, sans-serif;
+  background-color: #ec7000;
+  color: white;
+  padding: 20px;
+  margin: 0;
+  font-size: 1em;
+  border-radius: 10px 10px 0 0;
+}
+
+button {
+    background-color: transparent;
+    color: black;
+    border: none; 
+    font-size: 0.8em;
+    text-decoration: underline; 
+    cursor: pointer; 
+   margin-left: 3px;
+  }
+  
+
+.iconContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .descriptionContainer {
+    max-width: 60%;
+    margin: 15px auto;
+    background-color: #f2f2f2;
+    padding: 2%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column; 
+    gap: 5px; 
+  }
+  .home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh; 
+  }
+/* Estilos para hacerlo responsivo */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .categoriesContainer {
+    width: 100%; 
+    max-width: none; 
+  }
+
+  .btnContainer {
+    flex-direction: column; 
+    text-align: center; 
+  }
+  .home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh; 
+    margin-top: 180px;
+  }
+}

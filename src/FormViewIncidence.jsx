@@ -1,13 +1,23 @@
-import React from 'react';
 import { BubbleChat } from "flowise-embed-react";
 import FormBotIncidence from './components/formIncidence';
+import FormCSS from './components/form.module.css';
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Instructive from "./components/Instructive";
 
 function FormIncidence() {
     return (
-        <><div>
-            <h2>Formulario de Solicitud de Robot</h2>
-            <FormBotIncidence />
+        <>        
+        <Header/>
+        <div className={FormCSS.backView}>
+            <div className={FormCSS.leftColumn}>
+                <h3 className={FormCSS.tittle}>Completa el siguiente formulario para mandar tu solicitud</h3>
+                <FormBotIncidence />
+            </div>
+            <div className={FormCSS.rightColumn}>
+                <Instructive />
         </div>
+    </div>
         <section>
             <BubbleChat
                 chatflowid="f3e89a7f-e41d-43d4-9d76-0a0cdd4daa33"
@@ -48,7 +58,7 @@ function FormIncidence() {
                     }
                 }
                     }} />
-            </section></>
+            </section><Footer /></>
     );
 }
 

@@ -1,0 +1,83 @@
+.backView {
+    width: 100%;
+    padding: 110px 10px 100px 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* Divide en dos columnas de igual ancho */
+    grid-gap: 10px;
+    /* Espacio entre las dos columnas */
+}
+
+.leftColumn {
+    grid-column: 1;
+    /* Coloca en la primera columna */
+}
+
+.rightColumn {
+    grid-column: 2;
+    /* Coloca en la segunda columna */
+}
+
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.label {
+    display: flex;
+    align-items: start;
+    font-size: 14px;
+}
+
+.select {
+    width: 517px;
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid #908C8C;
+    background: #FFF;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url('src/assets/Vector (1).svg');
+    background-size: 18px;
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+.fileInput {
+    width: 517px;
+    padding: 10px 10px 10px 0px;
+    border-radius: 3px;
+    border: 1px solid #908C8C;
+    background: #F4F4F4;
+}
+
+.textArea {
+    width: 517px;
+    padding: 10px 10px 10px 0px;
+    border-radius: 3px;
+    border: 1px solid #908C8C;
+    background: #F4F4F4;
+}
+
+.submittButton {
+    width: 517px;
+    height: 40px;
+    border-radius: 8px;
+    background: #EC7000;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border: none;
+    color: #FFF;
+    font-size: 16px;
+}
+
+.tittle {
+    color: #252220;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 30px 30px 30px 20px;
+}
