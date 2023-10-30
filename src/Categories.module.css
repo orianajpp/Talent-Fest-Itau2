@@ -64,7 +64,7 @@ button {
     /* justify-content: center; */
     align-items: center;
     flex-direction: column;
-    height: 100vh; 
+    /* height: 100vh;  */
   }
 /* Estilos para hacerlo responsivo */
 @media (max-width: 768px) {

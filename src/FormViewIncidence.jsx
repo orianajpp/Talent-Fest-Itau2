@@ -28,17 +28,17 @@ function FormIncidence() {
                     button: {
                         backgroundColor: "#003399",
                         right: 20,
-                        bottom: 20,
-                        size: "medium",
+                        bottom: 50,
+                        size: "large",
                         iconColor: "#ffffff",
                         customIconSrc: "../src/assets/boticon.png",
                         },
                     chatWindow: {
-                        welcomeMessage: "¡Hola! Estoy para asistirte a completar tu indidencia. ¿Me podrías indicar cuál es tu gerencia?",
+                        welcomeMessage: "¡Hola! Estoy para asistirte a completar tu incidencia. ¿Me podrías indicar cuál es tu gerencia?",
                         backgroundColor: "#ffffff",
-                        height: 700,
-                        width: 500,
-                        fontSize: 24,
+                        height: 500,
+                        width: 300,
+                        fontSize: 18,
                         poweredByTextColor: "#252220",
                     botMessage: {
                         backgroundColor: "#ECECEC",

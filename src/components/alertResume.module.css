@@ -23,7 +23,7 @@
 .headerAlert {
     display: flex;
     align-items: center;
-    margin-top: 1.5625rem;
+    /* margin-top: 1.5625rem; */
 }
 
 .headerAlert img {
