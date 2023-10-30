@@ -1,5 +1,5 @@
 import { Link, useLocation } from 'react-router-dom';
-import styles from './Breadcrumbs.module.css';
+import styles from './breadcrumbs.module.css';
 
 const Breadcrumbs = () => {
     const location = useLocation();
