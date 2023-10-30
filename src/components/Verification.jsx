@@ -29,7 +29,7 @@ function Verification() {
     } else {
       setCodeError("");
 
-      if (num !== '123456') {
+      if (num !== '130392') {
         setIsErrorlogVisible(true);
       } else {
         navigate('/Home');

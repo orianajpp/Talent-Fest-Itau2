@@ -19,20 +19,20 @@ function FormIncidence() {
         </div>
     </div>
         <section>
-            <BubbleChat
+        <BubbleChat
                 chatflowid="f3e89a7f-e41d-43d4-9d76-0a0cdd4daa33"
                 apiHost="https://itau-2-tf.onrender.com"
                 theme={{
                     button: {
-                        backgroundColor: "#EC7000",
+                        backgroundColor: "#003399",
                         right: 20,
                         bottom: 20,
                         size: "medium",
                         iconColor: "#ffffff",
-                        customIconSrc: "src/assets/boticon.png",
+                        customIconSrc: "../src/assets/boticon.png",
                         },
                     chatWindow: {
-                        welcomeMessage: "¡Hola! Estoy para asistirte a completar tu solicitud. ¿Me podrías indicar cuál es tu gerencia?",
+                        welcomeMessage: "¡Hola! Estoy para asistirte a completar tu indidencia. ¿Me podrías indicar cuál es tu gerencia?",
                         backgroundColor: "#ffffff",
                         height: 700,
                         width: 500,
@@ -48,10 +48,10 @@ function FormIncidence() {
                         backgroundColor: "#FEF3E1",
                         textColor: "#252220",
                         showAvatar: true,
-                        avatarSrc: "src/assets/profile.logo.png",
+                        avatarSrc: "../src/assets/profile.logo.png",
                     },
                     textInput: {
-                        placeholder: "Type your question",
+                        placeholder: "Escribe tu pregunta",
                         backgroundColor: "#ffffff",
                         textColor: "#303235",
                         sendButtonColor: "#3B81F6",
