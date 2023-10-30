@@ -1,4 +1,4 @@
-import { useLocation } from 'react-router-dom';
+import { Navigate, useLocation } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import { useEffect, useState } from 'react';
@@ -13,12 +13,14 @@ function ResumeView(props) {
         return savedCount !== null ? JSON.parse(savedCount) : 0;
     });
     const [isModalOpen, setIsModalOpen] = useState(false);
+    
     const openModal = () => {
         setIsModalOpen(true);
     };
 
     const closeModal = () => {
         setIsModalOpen(false);
+        window.location.href = '/home';
     };
 
     useEffect(() => {
