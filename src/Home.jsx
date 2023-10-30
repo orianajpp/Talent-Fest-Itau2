@@ -1,9 +1,9 @@
-import Instructive from "./components/Instructive";
-import Categories from "./components/Categories";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+import Instructive from "./components/Instructive.jsx";
+import Categories from "./components/Categories.jsx";
+import Header from "./components/Header.jsx";
+import Footer from "./components/Footer.jsx";
 import CategoriesCSS from "./Categories.module.css";
-import Breadcrumbs from "./components/Breadcrumbs";
+import Breadcrumbs from "./components/Breadcrumbs.jsx";
 
 
 

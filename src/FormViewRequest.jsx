@@ -1,11 +1,11 @@
 import React from 'react';
 import { BubbleChat } from "flowise-embed-react";
-import FormBotRequest from './components/formRequest';
+import FormBotRequest from './components/formRequest.jsx';
 import FormCSS from './components/form.module.css';
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import Instructive from "./components/Instructive";
-import Breadcrumbs from './components/Breadcrumbs';
+import Header from "./components/Header.jsx";
+import Footer from "./components/Footer.jsx";
+import Instructive from "./components/Instructive.jsx";
+import Breadcrumbs from './components/Breadcrumbs.jsx';
 
 function FormRequest() {
     return (

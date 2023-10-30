@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import './verification.css';
-import Errorlog from "./Errorlog"; // Importa el componente Errorlog
+import Errorlog from "./Errorlog.jsx"; // Importa el componente Errorlog
 
 function Verification() {
   const navigate = useNavigate();

@@ -5,11 +5,11 @@ import {
   Route
 } from 'react-router-dom';
 import Home from './Home.jsx';
-import Login from './Login';
-import Breadcrumbs from "./components/Breadcrumbs";
-import FormRequest from './FormViewRequest';
-import FormIncidence from './FormViewIncidence';
-import ResumeView from './Resume';
+import Login from './Login.jsx';
+import Breadcrumbs from "./components/Breadcrumbs.jsx";
+import FormRequest from './FormViewRequest.jsx';
+import FormIncidence from './FormViewIncidence.jsx';
+import ResumeView from './Resume.jsx';
 
 function App() {
   console.log('App is rendering');

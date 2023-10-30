@@ -1,7 +1,7 @@
 import { Routes, Route } from 'react-router-dom';
-import FormRequest from '../FormViewRequest';
-import FormIncidence from '../FormViewIncidence';
-import ResumeView from '../Resume';
+import FormRequest from '../FormViewRequest.jsx';
+import FormIncidence from '../FormViewIncidence.jsx';
+import ResumeView from '../Resume.jsx';
 
 function FormHandler() {
     return (

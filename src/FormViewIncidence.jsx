@@ -1,10 +1,10 @@
 import { BubbleChat } from "flowise-embed-react";
-import FormBotIncidence from './components/formIncidence';
+import FormBotIncidence from './components/formIncidence.jsx';
 import FormCSS from './components/form.module.css';
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import Instructive from "./components/Instructive";
-import Breadcrumbs from "./components/Breadcrumbs";
+import Header from "./components/Header.jsx";
+import Footer from "./components/Footer.jsx";
+import Instructive from "./components/Instructive.jsx";
+import Breadcrumbs from "./components/Breadcrumbs.jsx";
 
 function FormIncidence() {
     return (

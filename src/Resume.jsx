@@ -1,10 +1,10 @@
 import { Navigate, useLocation } from 'react-router-dom';
-import Header from './components/Header';
-import Footer from './components/Footer';
+import Header from './components/Header.jsx';
+import Footer from './components/Footer.jsx';
 import { useEffect, useState } from 'react';
-import AlertResume from './components/AlertResume';
+import AlertResume from './components/AlertResume.jsx';
 import styles from './resume.module.css'
-import Breadcrumbs from './components/Breadcrumbs';
+import Breadcrumbs from './components/Breadcrumbs.jsx';
 
 function ResumeView(props) {
     console.log('Received data:', useLocation().state);
