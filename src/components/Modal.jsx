@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import "./modal.css";
-import Verification from "./Verification";
+//import Verification from "./Verification";
 
 function Modal({ message, showModal, closeModal, activeComponent }) {
   const navigate = useNavigate();
