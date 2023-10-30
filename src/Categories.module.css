@@ -9,7 +9,7 @@
   justify-content: space-between;
   align-items: center;
   border: 1px solid gray;
-  width: 230px;
+  width: 270px;
   height: 150px;
   max-width: 300px;
   border-radius: 10px;
@@ -61,7 +61,7 @@ button {
   }
   .home {
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     flex-direction: column;
     height: 100vh; 

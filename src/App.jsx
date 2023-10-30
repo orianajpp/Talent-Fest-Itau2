@@ -15,7 +15,6 @@ function App() {
   console.log('App is rendering');
   return (
     <Router>
-      <Breadcrumbs />
       <Routes>
         <Route path='/' element={<Login />} />
         <Route path='/Home' element={<Home />} />
