@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 import { BubbleChat } from "flowise-embed-react";
 import FormBotRequest from './components/formRequest.jsx';
 import FormCSS from './components/form.module.css';
