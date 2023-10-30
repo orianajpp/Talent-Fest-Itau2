@@ -4,11 +4,13 @@ import FormCSS from './components/form.module.css';
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Instructive from "./components/Instructive";
+import Breadcrumbs from "./components/Breadcrumbs";
 
 function FormIncidence() {
     return (
         <>        
         <Header isHomeView={true}/>
+        <Breadcrumbs />
         <div className={FormCSS.backView}>
             <div className={FormCSS.leftColumn}>
                 <h3 className={FormCSS.tittle}>Completa el siguiente formulario para mandar tu solicitud</h3>

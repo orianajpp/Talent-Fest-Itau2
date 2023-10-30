@@ -4,6 +4,7 @@ import Footer from './components/Footer';
 import { useEffect, useState } from 'react';
 import AlertResume from './components/AlertResume';
 import styles from './resume.module.css'
+import Breadcrumbs from './components/Breadcrumbs';
 
 function ResumeView(props) {
     console.log('Received data:', useLocation().state);
@@ -38,6 +39,7 @@ function ResumeView(props) {
     return (
         <>
             <Header />
+            <Breadcrumbs />
             <div className={styles.containerResume}>
                 <h1 className={styles.h2Text}>Resumen de Datos</h1>
                 <ul className={styles.listResume}>
