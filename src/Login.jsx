@@ -1,10 +1,10 @@
 import welcome from "./assets/welcome.png";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+import Header from "./components/Header.jsx";
+import Footer from "./components/Footer.jsx";
 import { useState } from "react";
 import { signIn } from "./firebase";
-import  Modal from "./components/modal";
-import Verification from "./components/Verification";
+import  Modal from "./components/modal.jsx";
+import Verification from "./components/Verification.jsx";
 
 const Login = () => {
   
